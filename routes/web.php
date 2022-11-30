@@ -26,3 +26,7 @@ Route::middleware([
         return view('users');
     })->name('users');
 });
+
+Route::get('/create',function() {
+    return view('create');
+});
