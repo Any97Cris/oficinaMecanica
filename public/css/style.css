@@ -1,0 +1,22 @@
+body{
+    background-image: url('/img/img_mecanico.jpg');
+    background-size:cover;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.fundoDivPrincipal {
+    opacity: 0.8;
+    padding-top: 10px;
+}
+
+.search {
+    width: 50%;
+}
+
+.centralizarSearch {
+    display: flex;
+    justify-content: center;
+}
