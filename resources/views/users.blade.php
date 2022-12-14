@@ -14,6 +14,7 @@
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class="imgFundo"></div>
     <nav class="navbar navbar-expand-lg bg-light mb-5">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

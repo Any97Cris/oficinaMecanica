@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateForeignkeyTelefonesUsers extends Migration
+class CreateForeignkeyClientesClientesCarros extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateForeignkeyTelefonesUsers extends Migration
      */
     public function up()
     {
-        Schema::table('telefones', function (Blueprint $table) {
-            $table->foreign('user_id')
-            ->references('id')
-            ->on('users')
-            ->onDelete('SET NULL');
-
+        Schema::table('clientes', function (Blueprint $table) {
+            //
         });
     }
 
@@ -29,8 +25,8 @@ class CreateForeignkeyTelefonesUsers extends Migration
      */
     public function down()
     {
-        Schema::table('telefones', function (Blueprint $table) {
-            $table->dropForeign('user_id');
+        Schema::table('clientes', function (Blueprint $table) {
+            //
         });
     }
 }

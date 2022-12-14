@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateForeignkeyCarroMarca extends Migration
+class CreateClientesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateForeignkeyCarroMarca extends Migration
      */
     public function up()
     {
-        Schema::table('carro', function (Blueprint $table) {
-            $table->foreign('marca_id')
-            ->references('id')
-            ->on('marca')
-            ->onDelete('SET NULL');
+        Schema::create('clientes', function (Blueprint $table) {
+            $table->id();
+            $table->string('nome');
+            $table->unsignedBigInteger('carro_id');
+            $table->timestamps();
         });
     }
 
@@ -28,8 +28,6 @@ class CreateForeignkeyCarroMarca extends Migration
      */
     public function down()
     {
-        Schema::table('carro', function (Blueprint $table) {
-            $table->dropForeign('marca_id');
-        });
+        Schema::dropIfExists('clientes');
     }
 }

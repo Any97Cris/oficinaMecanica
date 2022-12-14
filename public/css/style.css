@@ -1,7 +1,8 @@
 body{
+    width: 100vw;
+    height: 100vw;
     background-image: url('/img/img_mecanico.jpg');
-    background-size:100%;
-    background-repeat: no-repeat;
+    background-color: rgb(41, 41, 41);
 }
 
 .font20 {

@@ -17,7 +17,7 @@ class CreateTelefonesTable extends Migration
             $table->id();
             $table->string('numero');
             $table->string('tipo');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('clientes_id');
             $table->timestamps();
         });
     }
