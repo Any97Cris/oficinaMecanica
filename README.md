@@ -6,3 +6,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
+<p align="justify">
+Nesse projeto dou vida a ideia que vi quano assiti o curso de banco de dados. Na aula apenas o esqueleto do banco e relacionamento. Decidi criar as telas e dá via a ideia.
+</p>
+
+<p align="justify">
+Esse Projeto me desafio na parte do backend, relacionamento entre as tabelas, usei o ORM Eloquent do Laravel.
+</p>
