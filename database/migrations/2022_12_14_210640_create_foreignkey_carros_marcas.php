@@ -14,7 +14,10 @@ class CreateForeignkeyCarrosMarcas extends Migration
     public function up()
     {
         Schema::table('carros', function (Blueprint $table) {
-            //
+            $table->foreign('marcas_id')
+            ->references('id')
+            ->on('marcas')
+            ->onDelete('SET NULL');
         });
     }
 
@@ -26,7 +29,7 @@ class CreateForeignkeyCarrosMarcas extends Migration
     public function down()
     {
         Schema::table('carros', function (Blueprint $table) {
-            //
+            $table->dropForeign('marcas_id');
         });
     }
 }

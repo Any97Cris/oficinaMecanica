@@ -14,7 +14,8 @@ class CreateCarrosClientesTable extends Migration
     public function up()
     {
         Schema::create('carros_clientes', function (Blueprint $table) {
-            $table->id();
+            $table->foreignId('carros_id')->constrained();
+            $table->foreignId('cores_id')->constrained();
             $table->timestamps();
         });
     }

@@ -14,7 +14,10 @@ class CreateForeignkeyTelefonesClientes extends Migration
     public function up()
     {
         Schema::table('telefones', function (Blueprint $table) {
-            //
+            $table->foreign('clientes_id')
+            ->references('id')
+            ->on('clientes')
+            ->onDelete('SET NULL');
         });
     }
 
@@ -26,7 +29,7 @@ class CreateForeignkeyTelefonesClientes extends Migration
     public function down()
     {
         Schema::table('telefones', function (Blueprint $table) {
-            //
+            $table->dropForeign('clientes_id');
         });
     }
 }

@@ -17,7 +17,7 @@ class CreateCarrosTable extends Migration
             $table->id();
             $table->string('modelo');
             $table->string('placa');
-            $table->unsignedBigInteger('marca_id');
+            $table->unsignedBigInteger('marcas_id');
             $table->timestamps();
         });
     }
